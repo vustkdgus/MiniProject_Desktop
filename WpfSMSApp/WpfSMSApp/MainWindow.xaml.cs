@@ -27,7 +27,7 @@ namespace WpfSMSApp
             InitializeComponent();
         }
 
-        private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
+        private void MetroWindow_ContentRendered(object sender, EventArgs e)
         {
             LoginView view = new LoginView();
             view.Owner = this;

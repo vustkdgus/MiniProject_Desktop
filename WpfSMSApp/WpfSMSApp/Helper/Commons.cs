@@ -3,7 +3,7 @@ using WpfSMSApp.Model;
 
 namespace WpfSMSApp
 {
-    class Commons
+    public class Commons
     {
         // NLog 정적 인스턴스 생성
         public static readonly Logger LOGGER = LogManager.GetCurrentClassLogger();
