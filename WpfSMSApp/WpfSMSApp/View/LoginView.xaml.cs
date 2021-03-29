@@ -32,8 +32,11 @@ namespace WpfSMSApp.View
             var result = await this.ShowMessageAsync("종료", "프로그램 종료할까요?", 
                 MessageDialogStyle.AffirmativeAndNegative, null);
 
-            if (result == MessageDialogResult.Affirmative)
+            if (result == MessageDialogResult.Affirmative) 
+            {
+                Commons.LOGGER.Info("프로그램 종료");
                 Application.Current.Shutdown(); // 프로그램 종료
+            }
         }
 
         private void MetroWindow_Loaded(object sender, RoutedEventArgs e)
