@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfSMSApp.View;
 using WpfSMSApp.View.Account;
+using WpfSMSApp.View.User;
 
 namespace WpfSMSApp
 {
@@ -27,7 +28,7 @@ namespace WpfSMSApp
         public MainWindow()
         {
             InitializeComponent();
-        }
+        }       
 
         private void MetroWindow_ContentRendered(object sender, EventArgs e)
         {
@@ -37,18 +38,19 @@ namespace WpfSMSApp
         private void MetroWindow_Activated(object sender, EventArgs e)
         {
             if (Commons.LOGINED_USER != null)
-                BtnLoginedId.Content = $"{ Commons.LOGINED_USER.UserEmail} {(Commons.LOGINED_USER.UserName)}";
+                BtnLoginedId.Content = $"{Commons.LOGINED_USER.UserEmail} ({Commons.LOGINED_USER.UserName})";
         }
 
         private async void BtnLogOut_Click(object sender, RoutedEventArgs e)
         {
-            // TODO : 모듢 화면을 해제하고 초기화
+            // TODO : 모든 화면을 해제하고 첫화면으로 돌려놔야 함.
+
             var result = await this.ShowMessageAsync("로그아웃", "로그아웃하시겠습니까?",
                 MessageDialogStyle.AffirmativeAndNegative, null);
 
             if (result == MessageDialogResult.Affirmative)
             {
-                Commons.LOGINED_USER = null; // 로그인한 사용자 정보 삭제
+                Commons.LOGINED_USER = null; // 로그인했던 사용자 정보를 삭제
                 ShowLoginView();
             }
         }
@@ -82,7 +84,7 @@ namespace WpfSMSApp
             }
             catch (Exception ex)
             {
-                Commons.LOGGER.Error($"예외발생 BtnAccount_Click : {ex}");
+                Commons.LOGGER.Error($"예외발생 BtnUser_Click : {ex}");
                 await this.ShowMessageAsync("예외", $"예외발생 : {ex}");
             }
         }

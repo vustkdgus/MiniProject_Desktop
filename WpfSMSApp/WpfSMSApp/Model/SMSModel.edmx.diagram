@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b788964afe37474ead84f26d2c332202" Name="Diagram1">
+      <Diagram DiagramId="f649683f651f4b4b96742e34f80b836f" Name="Diagram1">
         <EntityTypeShape EntityType="SMSModel.Antenna" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
         <EntityTypeShape EntityType="SMSModel.Barcode" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="SMSModel.BookOut" Width="1.5" PointX="3" PointY="15.625" IsExpanded="true" />

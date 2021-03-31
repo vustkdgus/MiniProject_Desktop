@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfSMSApp.View.Account
 {
@@ -47,7 +36,7 @@ namespace WpfSMSApp.View.Account
 
         private void BtnEditMyAccount_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new EditAccount());
+            NavigationService.Navigate(new EditAccount()); // 계정정보 수정 화면으로 변경
         }
     }
 }
