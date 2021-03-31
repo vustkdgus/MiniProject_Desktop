@@ -37,9 +37,9 @@ namespace WpfSMSApp.View.User
                 CboUserAdmin.ItemsSource = comboValues;
                 CboUserActivated.ItemsSource = comboValues;
 
-                TxtUserID.Text = "";
+                TxtUserID.Text = TxtUserIdentityNumber.Text = "";
 
-                
+
             }
             catch (Exception ex)
             {
@@ -65,7 +65,7 @@ namespace WpfSMSApp.View.User
             }
             else
             {
-                var cnt = Logic.DataAccess.GetUsers().Where(u => u.UserIdentityNumber.Equals(TxtUserIdentityNumber)).Count();
+                var cnt = Logic.DataAccess.GetUsers().Where(u => u.UserIdentityNumber.Equals(TxtUserIdentityNumber.Text)).Count();
                 if (cnt > 0)
                 {
                     LblUserIdentityNumber.Visibility = Visibility.Visible;
@@ -96,7 +96,7 @@ namespace WpfSMSApp.View.User
             }
             else
             {
-                var cnt = Logic.DataAccess.GetUsers().Where(u => u.UserEmail.Equals(TxtUserEmail)).Count();
+                var cnt = Logic.DataAccess.GetUsers().Where(u => u.UserEmail.Equals(TxtUserEmail.Text)).Count();
                 if (cnt > 0)
                 {
                     LblUserEmail.Visibility = Visibility.Visible;
