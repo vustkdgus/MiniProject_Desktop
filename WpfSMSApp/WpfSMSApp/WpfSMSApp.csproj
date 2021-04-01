@@ -186,8 +186,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Logic\DataAccess.cs" />
+    <Compile Include="Model\StockStore.cs" />
     <Compile Include="View\Account\EditAccount.xaml.cs">
       <DependentUpon>EditAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Store\AddStore.xaml.cs">
+      <DependentUpon>AddStore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Store\StoreList.xaml.cs">
+      <DependentUpon>StoreList.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\User\DeactiveUser.xaml.cs">
       <DependentUpon>DeactiveUser.xaml</DependentUpon>
@@ -221,6 +228,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="View\Account\EditAccount.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Store\AddStore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Store\StoreList.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -324,6 +339,9 @@
     </EntityDeploy>
     <None Include="Model\SMSModel.edmx.diagram">
       <DependentUpon>SMSModel.edmx</DependentUpon>
+    </None>
+    <None Include="NanumGothic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
