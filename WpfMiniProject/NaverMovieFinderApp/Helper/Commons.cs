@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -50,7 +51,23 @@ namespace NaverMovieFinderApp.Helper
 
             return result;
         }
-    }
 
-    
+        /// <summary>
+        /// HTML 태그 삭제 메서드
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public static string StripHtmlTag(string text)
+        {
+            return Regex.Replace(text, @"<(.|\n)*?>", ""); // HTML 태그 삭제하는 정규표현식
+        }
+
+        public static string stripPipe(string text)
+        {
+            if (string.IsNullOrEmpty(text)) 
+                return "";
+            else
+                return text.Substring(0, text.LastIndexOf("|")).Replace("|", ", ");
+        }
+    }
 }
