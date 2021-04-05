@@ -34,15 +34,23 @@
 
 ![img_20210405_160417_001](https://user-images.githubusercontent.com/38821846/113548992-8a1f4f80-962b-11eb-9630-90656d7abb8e.png)
 
+
+
 ### 즐겨찾기 보기
 
 ![img_20210405_160445_001](https://user-images.githubusercontent.com/38821846/113549040-a02d1000-962b-11eb-9d9b-499103e6e939.png)
+
+
 
 ### 예고편 보기
 
 ![img_20210405_160415_001](https://user-images.githubusercontent.com/38821846/113549060-b044ef80-962b-11eb-96f1-16fbc177cff3.png)
 
+
+
 ### 네이버 영화로 이동
 
 ![img_20210405_160421_001](https://user-images.githubusercontent.com/38821846/113549095-bdfa7500-962b-11eb-9c6b-0a04737c4eae.png)
+
+
 
