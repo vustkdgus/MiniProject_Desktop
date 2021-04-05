@@ -4,10 +4,10 @@
 <p align='center'><b> C# 미니프로젝트 데스크탑앱 리포지토리 </b></p>
 <p align='center'>
    <br>
-   <a href=#WinformBasic>
+   <a href=#ERP>
     <img src="https://img.shields.io/badge/ERP%20-%23F7DF1E.svg?&style=for-the-badge&&logoColor=white"/>
   </a>
-  <a href=#WPF1>
+  <a href=#MovieFinder>
     <img src="https://img.shields.io/badge/Movie_Finder%20-%234FC08D.svg?&style=for-the-badge&&logoColor=white"/>
   </a>
 </p>
