@@ -95,7 +95,7 @@
                       AutoGenerateColumns="False" SelectionUnit="FullRow"
                       GridLinesVisibility="Vertical"
                       Style="{StaticResource MahApps.Styles.DataGrid.Azure}"
-                      ItemsSource="{Binding }">
+                      ItemsSource="{Binding }" IsReadOnly="True">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding StoreID}" Header="순번" Width="60" IsReadOnly="True" />
                     <DataGridTextColumn Binding="{Binding StoreName}" Header="창고명" Width="*" IsReadOnly="True" />
