@@ -127,7 +127,7 @@ namespace WpfSMSApp.View.Store
             try
             {
                 var storeId = (GrdData.SelectedItem as Model.Store).StoreID;
-                NavigationService.Navigate(new EditStore());
+                NavigationService.Navigate(new EditStore(storeId));
             }
             catch (Exception ex)
             {

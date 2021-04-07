@@ -5,7 +5,6 @@ using System.Security.Cryptography;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using MahApps.Metro.Controls.Dialogs;
 
 namespace WpfSMSApp.View.Store
 {
@@ -51,9 +50,6 @@ namespace WpfSMSApp.View.Store
                 Commons.LOGGER.Error("예외", $"EditStore.xaml.cs Page_Loaded 예외 : {ex}");
                 Commons.ShowMessageAsync("예외",$"예외발생 : {ex}");
             }
-
-
-
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
