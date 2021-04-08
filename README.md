@@ -24,9 +24,34 @@
 
 ## ERP 재고관리<a id= "ERP">
 
-수정중...
+### 로그인화면
+
+![img_20210408_150425_001](https://user-images.githubusercontent.com/38821846/113979487-42ddcc80-9880-11eb-86d4-32470d13b82e.png)
 
 <br>
+<br>
+
+### 계정 리스트
+
+![img_20210408_150414_001](https://user-images.githubusercontent.com/38821846/113979516-4ffabb80-9880-11eb-8eb7-2845ad9f822c.png)
+
+
+<br><br>
+
+### 계정정보
+
+![img_20210408_150423_001](https://user-images.githubusercontent.com/38821846/113979545-58eb8d00-9880-11eb-9c22-16a09b0fc27f.png)
+
+
+### 창고리스트
+
+![img_20210408_150407_001](https://user-images.githubusercontent.com/38821846/113979579-630d8b80-9880-11eb-94c0-156d10744fa7.png)
+
+
+<br><br><br>
+
+
+<hr>
 
 ## Movie FInder <a id = "MovieFinder">
 
